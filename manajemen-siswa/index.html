@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manajemen Data Siswa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Manajemen Data Siswa</h1>
+
+    <form id="siswaForm">
+      <input type="hidden" id="siswaId" />
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" required /><br />
+      <label for="kelas">Kelas:</label>
+      <input type="text" id="kelas" required /><br />
+      <label for="alamat">Alamat:</label>
+      <textarea id="alamat" required></textarea><br />
+      <label for="foto">Foto Profil:</label>
+      <input type="file" id="foto" accept="image/*" /><br />
+      <button type="submit">Simpan</button>
+    </form>
+
+    <table id="siswaTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nama</th>
+          <th>Kelas</th>
+          <th>Alamat</th>
+          <th>Foto</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
